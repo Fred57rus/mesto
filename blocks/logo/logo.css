@@ -1,0 +1,27 @@
+.logo {
+    width: 142px;
+    height: 33px;
+
+    background-image: url(../../images/logo.png);
+
+    margin-bottom: 41px;
+}
+
+@media (max-width: 930px) {
+  .header{
+    max-width: 590px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo{
+		max-width: 266px;
+
+		margin-left: 27px;
+		margin-bottom: 32px;
+		width: 103px;
+    height: 24px;
+		
+		background-size: cover;
+  }
+}

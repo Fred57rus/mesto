@@ -1,0 +1,21 @@
+.profile__info {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+
+    margin: 0 auto;
+}
+
+@media(max-width: 730px) {
+    .profile__info {
+        grid-template-columns: 1fr minmax(min-content, max-content);
+    }
+  }
+
+
+@media(max-width: 600px){
+.profile__info {
+    width: 290px;
+    margin-bottom: 4px;
+    grid-template-columns: 1fr;
+}
+}
