@@ -1,4 +1,4 @@
-.elemrnts__button {
+.elements__grup-button {
     margin: 0;
     padding: 0;
 
@@ -15,7 +15,7 @@
     opacity: 1;
 }
 
-.elemrnt__button :hover{
+.elements__grup-button :hover{
     opacity: .8;
     transition-duration: 1s;
 }
