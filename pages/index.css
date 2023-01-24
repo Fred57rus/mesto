@@ -19,11 +19,11 @@
 
 @import url(../blocks/elements/elements.css);
 
-@import url(../blocks/element/element.css);
-@import url(../blocks/element/__img/element__img.css);
-@import url(../blocks/element/__grup/element__grup.css);
-@import url(../blocks/element/__text/element__text.css);
-@import url(../blocks/element/__like/elemrnt__like.css);
+@import url(../blocks/elements/__card/elements__card.css);
+@import url(../blocks/elements/__img/element__img.css);
+@import url(../blocks/elements/__grup/element__grup.css);
+@import url(../blocks/elements/__text/element__text.css);
+@import url(../blocks/elements/__button/elemrnt__button.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);
