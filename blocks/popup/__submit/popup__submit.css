@@ -13,9 +13,12 @@
   background-color: #000;
 
   border-radius: 2px;
+  border: none;
 
   opacity: 1;
   transition-duration: 1s;
+
+  cursor: pointer;
 }
 
 .popup__submit:hover {

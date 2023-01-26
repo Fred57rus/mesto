@@ -10,6 +10,8 @@
     color: #fff;
 
     max-height: 24px;
+
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
