@@ -5,22 +5,37 @@
    top: -40px;
    left: 438px;
 
+   cursor: pointer;
 
-   background-image: url(../../../images/Close\ Icon.png);
+   background-image: url(../../../images/buttonClose.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
 
    width: 32px;
    height: 32px;
 
    opacity: 1;
+   transition-duration: 1s;
 }
 
 .popup__buttom-close:hover {
    opacity: .8;
-   transition-duration: 1s;
 }
 
 @media(max-width: 560px) {
   .popup__buttom-close{
     left: 398px;
+  }
+}
+
+@media(max-width: 450px) {
+  .popup__buttom-close{
+    left: 91%;
+    top: -36px;
+
+    width: 22px;
+    height: 22px;
+
+
   }
 }

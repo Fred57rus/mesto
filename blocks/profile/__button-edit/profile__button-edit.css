@@ -2,20 +2,24 @@
     padding: 0;
     margin: 10% 0 0 0;
 
-    width: 24px;
-    height: 24px;
+    background-image: url(../../../images/EditButton.svg);
+    background-repeat: no-repeat;
+
+    width: 30px;
+    height: 30px;
 
     background-color: black;
     
+    transition-duration: 1s;
 
     cursor: pointer;
 
     opacity: 1;
 }
 
-.profile__button-edit :hover {
+.profile__button-edit:hover {
     opacity: .8;
-    transition-duration: 1s;
+
 }
 
 @media(max-width: 600px) {
@@ -27,8 +31,11 @@
 
 @media(max-width: 320px) {
     .profile__button-edit {
-        width: 18px;
-        height: 18px;
+
+        margin-top: 6px;
+        margin-left: 10px;
+        width: 22px;
+        height: 22px;
         background-size: contain;
     }
 }

@@ -13,9 +13,9 @@
     cursor: pointer;
 
     opacity: 1;
+    transition-duration: 1s;
 }
 
-.elements__grup-button :hover{
+.elements__grup-button:hover{
     opacity: .8;
-    transition-duration: 1s;
 }

@@ -8,6 +8,10 @@
     line-height: 22px;
 
     color: #fff;
+
+    max-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media(max-width: 730px) {

@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
 
-  background-color: #000;
-  color: #fff;
-
-  border: 2px solid #FFFFFF;
+  border: solid 1px #fff;
   border-radius: 2px;
+  background-image: url(../../../images/addButton.svg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center;
 
   width: 150px;
   height: 50px;
@@ -15,30 +16,28 @@
 
   justify-self: end;
 
-  font-size: 40px;
-
   opacity: 1;
+  transition-duration: 1s;
 }
 
-.profile__button-add :hover {
+.profile__button-add:hover {
   opacity: .8;
-  transition-duration: 1s;
 }
 
 @media(max-width: 600px) {
   .profile__button-add {
-margin: 0 auto;
+    margin: 0 auto;
 
-      grid-column: 1;
-      grid-row: 3;
+    grid-column: 1;
+    grid-row: 3;
 
-      width: 95%;
+    width: 95%;
   }
 }
 
 @media(max-width: 320px) {
   .profile__button-add {
-margin: 0 auto;
-      width: 88%;
+      margin: 0 auto;
+      width: 93%;
   }
 }
