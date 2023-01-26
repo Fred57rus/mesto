@@ -30,11 +30,11 @@
 
 @media(max-width: 450px) {
   .popup__buttom-close{
-    left: 91%;
-    top: -36px;
+    left: 93%;
+    top: -38px;
 
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 
 
   }
