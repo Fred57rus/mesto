@@ -6,8 +6,9 @@
 
     background-color: #fff;
     background-image: url(../../../images/like.svg);
+    background-repeat: no-repeat;
 
-    width: 22px;
+    width: 26px;
     height: 19px;
 
     cursor: pointer;
