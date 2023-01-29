@@ -1,4 +1,6 @@
 .elements__text{
+  max-width: 90%;
+
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
