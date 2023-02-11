@@ -1,0 +1,18 @@
+.elements__delit {
+  width: 18px;
+  height: 19px;
+
+  padding: 0;
+
+  cursor:pointer;
+
+  position: relative;
+  top: -340px;
+  right: -246px;
+
+
+  border: 0;
+
+  background-image: url(../../../images/Group.svg);
+  background-color: transparent;
+}

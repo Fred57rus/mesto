@@ -1,0 +1,31 @@
+.foto__close {
+  all: unset;
+  
+  border: none;
+
+  position: absolute;
+
+  top: -40px;
+  right: -40px;
+
+  cursor: pointer;
+
+  background-image: url(../../../images/buttonClose.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 32px;
+  height: 32px;
+
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+@media(max-width: 600px) {
+  .foto__close{
+    right: 0px;
+
+    width: 20px;
+    height: 20px;
+  }
+}

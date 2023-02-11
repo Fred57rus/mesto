@@ -1,0 +1,4 @@
+.elements__grup-button_active {
+    opacity: 1;
+    background-image: url(../../../../images/LikeActiv.svg);
+}

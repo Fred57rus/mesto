@@ -23,65 +23,56 @@
       <button class="profile__button-add" type="button"></button>
     </section>
     <section class="elements">
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1088404-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">Карачаевск</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1404681-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">Гора Эльбрус</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1556355-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">Домбай</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1088404-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">Гора Эльбрус</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1404681-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">Домбай</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__card">
-        <img class="elements__img" src="images/kirill-pershin-1556355-unsplash.jpg" alt="Картинка">
-        <div class="elements__grup">
-          <h2  class="elements__text">карачаево-черкесия</h2 >
-          <button class="elements__grup-button" type="button"></button>
-        </div>
-      </article>
+    
     </section>
   </main>
   <footer class="footer">
     <p class="footer__text">© 2020 Mesto Russia</p>
   </footer>
-  <section class="popup">
+
+
+  <section class="popup popup_edit">
     <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="form">
-            <input class="popup__input popup__input_name_value" type="text" value="" name="fullName">
-            <input class="popup__input popup__input_job_value" type="text" value="" name="profession">
-            <button class="popup__submit" type="submit">Сохранить</button>
+        <form class="popup__form popup__form_edit" name="form">
+            <input class="popup__input popup__input_name_value " type="text" value="" name="fullName">
+            <input class="popup__input popup__input_job_value " type="text" value="" name="profession">
+            <button class="popup__submit popup__submit_edit" type="submit">Сохранить</button>
         </form>
-        <button class="popup__buttom-close" type="button"></button>
+        <button class="popup__buttom-close popup__buttom-close_edit" type="button"></button>
     </div>
 </section>
 
+<section class="popup popup_add">
+  <div class="popup__container">
+      <h2 class="popup__title">Новое место</h2>
+      <form class="popup__form  popup__form_add" name="form">
+          <input class="popup__input popup__input_title_value" type="text" value="" name="title">
+          <input class="popup__input popup__input_link_value" type="text" value="" name="link">
+          <button class="popup__submit popup__submit_add" type="submit">Сохранить</button>
+      </form>
+      <button class="popup__buttom-close popup__buttom-close_add" type="button"></button>
+  </div>
+</section>
+
+<template class="template">
+  <article class="elements__card">
+    <img class="elements__img" src="" alt="">
+    <div class="elements__grup">
+      <h2  class="elements__text"></h2 >
+      <button class="elements__grup-button" type="button"></button>
+    </div>
+    <button class="elements__delit" type="button"></button>
+  </article>
+</template>
+
+<section class="foto">
+  <div class="foto__container">
+    <img class="foto__image" src="" alt="">
+    <h2 class="foto__title"></h2>
+    <button class="foto__close"></button>
+  </div>
+</section>
 
   <script src="scripts/index.js" defer></script>
 </body>
