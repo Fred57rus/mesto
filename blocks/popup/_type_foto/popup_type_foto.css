@@ -1,4 +1,4 @@
-.foto {
+.popup_type_foto {
   display: flex;
   background-color: rgba(0, 0, 0, .9);
   visibility: hidden;
@@ -10,4 +10,5 @@
   bottom: 0;
   left: 0;
   padding-top: 22vh;
+  align-items: normal;
 }

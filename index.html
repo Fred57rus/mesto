@@ -35,8 +35,8 @@
     <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form popup__form_edit" name="form">
-            <input class="popup__input popup__input_name_value " type="text" value="" name="fullName">
-            <input class="popup__input popup__input_job_value " type="text" value="" name="profession">
+            <input class="popup__input popup__input_name_value " type="text" value="" name="fullName" placeholder="Ведите Ваше имя">
+            <input class="popup__input popup__input_job_value " type="text" value="" name="profession" placeholder="Вид Вашей деятельности">
             <button class="popup__submit popup__submit_edit" type="submit">Сохранить</button>
         </form>
         <button class="popup__buttom-close popup__buttom-close_edit" type="button"></button>
@@ -47,11 +47,19 @@
   <div class="popup__container">
       <h2 class="popup__title">Новое место</h2>
       <form class="popup__form  popup__form_add" name="form">
-          <input class="popup__input popup__input_title_value" type="text" value="" name="title">
-          <input class="popup__input popup__input_link_value" type="text" value="" name="link">
+          <input class="popup__input popup__input_title_value" type="text" value="" name="title" placeholder="Название">
+          <input class="popup__input popup__input_link_value" type="text" value="" name="link" placeholder="Ссылка на картинку">
           <button class="popup__submit popup__submit_add" type="submit">Сохранить</button>
       </form>
       <button class="popup__buttom-close popup__buttom-close_add" type="button"></button>
+  </div>
+</section>
+
+<section class="popup popup_type_foto">
+  <div class="popup__foto-container">
+    <img class="popup__foto" src="#" alt="#">
+    <h2 class="popup__foto-title"></h2>
+    <button class="popup__buttom-close popup__buttom-close_foto"></button>
   </div>
 </section>
 
@@ -65,15 +73,6 @@
     <button class="elements__delit" type="button"></button>
   </article>
 </template>
-
-<section class="foto">
-  <div class="foto__container">
-    <img class="foto__image" src="#" alt="#">
-    <h2 class="foto__title"></h2>
-    <button class="foto__close"></button>
-  </div>
-</section>
-
   <script src="scripts/index.js" defer></script>
 </body>
 </html>  
