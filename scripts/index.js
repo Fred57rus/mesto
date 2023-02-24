@@ -18,7 +18,7 @@ const popupJod = document.querySelector(".popup__input_job_value");//input
 const cardElements = document.querySelector('.elements');
 const popupFoto = document.querySelector(".popup_type_foto");
 const popupFotoImg = document.querySelector(".popup__foto");
-const PopupFotoTitle = document.querySelector(".popup__foto-title");
+const popupFotoTitle = document.querySelector(".popup__foto-title");
 const popupFotoBtnClose = document.querySelector(".popup__buttom-close_foto")
 
 const template = document
@@ -69,11 +69,11 @@ const initialCards = [
         evt.target.classList.toggle("elements__grup-button_active");
     });
     card.querySelector(".elements__img").addEventListener("click", (evt) => {
-        openPopup(popupFoto);
         const imageElement = card.querySelector(".elements__img");
-        popupFotoImg.src = imageElement.src;
-        popupFotoImg.alt = imageElement.alt;
-        PopupFotoTitle.textContent = card.querySelector(".elements__text").textContent;
+        popupFotoImg.src = item.link;
+        popupFotoImg.alt = item.name;
+        popupFotoTitle.textContent = card.querySelector(".elements__text").textContent;
+        openPopup(popupFoto);
     })
     card.querySelector(".elements__delit").addEventListener("click", () => {
         card.remove();
@@ -97,8 +97,8 @@ function submitAddProfileForm (evt) {
     const link = popupAddLink.value
 
     const newCard = createCards({name: name, link: link});
-    cardElements.append(newCard)
-    closePopup(popupConteinerAdd);
+    cardElements.prepend(newCard)
+    closePopupAddFoto();
 }
 
 function openPopup(popup){
@@ -106,20 +106,33 @@ function openPopup(popup){
     document.addEventListener('keydown', (evt) => {
         keyHandlerEsc(evt, popup)
     })
-    document.addEventListener( 'click', (evt) => {
+    document.addEventListener( 'mousedown', (evt) => {
         keyHandlerOverlay (evt, popup)
     })
 
 };
 
 function closePopup(popup) {                                                      //удаление класса для popup
-    popup.classList.remove("popup_opened")
+    popup.classList.remove("popup_opened");
+    document.removeEventListener('keydown', (evt) => {
+        keyHandlerEsc(evt, popup)
+    })
+    document.removeEventListener( 'mousedown', (evt) => {
+        keyHandlerOverlay (evt, popup)
+    })
+
 };
 
+function closePopupAddFoto() {
+    popupAddTitle.value = '';
+    popupAddLink.value = '';
+    closePopup(popupConteinerAdd);
+}
+
 function openPopupEdit() {                                                     //добавление класса для popup
-    openPopup(popupEditProfile)
     popupName.value = profileName.textContent;
     popupJod.value = profileJob.textContent;
+    openPopup(popupEditProfile)
 };
 
 popupEditProfileBtn.addEventListener("click", openPopupEdit);
@@ -127,13 +140,15 @@ popupEditProfileBtn.addEventListener("click", openPopupEdit);
 popupEditBtnClose.addEventListener("click", ()=> {
     closePopup(popupEditProfile);
 });
-formElementAdd.addEventListener("submit",submitAddProfileForm)
+formElementAdd.addEventListener("submit",submitAddProfileForm);
+
 popupBtnAdd.addEventListener("click", () => {
     openPopup(popupConteinerAdd);
 })
 formElementEdit.addEventListener('submit', submitEditProfileForm); 
+
 popupBtnCloseAdd.addEventListener("click", ()=> {
-    closePopup(popupConteinerAdd);;
+    closePopupAddFoto();
 });
 popupFotoBtnClose.addEventListener("click", ()=> {
     closePopup(popupFoto)

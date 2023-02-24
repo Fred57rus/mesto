@@ -1,3 +1,4 @@
 .popup__input-error-container {
-    min-height: 26px;
+    display: block;
+    min-height: 38px;
 }

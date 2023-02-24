@@ -1,6 +1,11 @@
 .elements__grup {
     width: 242px;
 
+    position: absolute;
+
+    bottom: 0px;
+    left: 20px;
+
     margin: 0 auto;
 
     display: flex;

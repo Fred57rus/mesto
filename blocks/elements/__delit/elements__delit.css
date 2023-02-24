@@ -6,9 +6,9 @@
 
   cursor:pointer;
 
-  position: relative;
-  top: -340px;
-  right: -246px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 
 
   border: 0;
