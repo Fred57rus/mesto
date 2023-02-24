@@ -34,21 +34,74 @@
   <section class="popup popup_edit">
     <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form popup__form_edit" name="form">
-            <input class="popup__input popup__input_name_value " type="text" value="" name="fullName" placeholder="Ведите Ваше имя">
-            <input class="popup__input popup__input_job_value " type="text" value="" name="profession" placeholder="Вид Вашей деятельности">
+        <form class="popup__form popup__form_edit" name="form" novalidate>
+            <label class="form__field">
+              <input
+              required
+              class="popup__input popup__input_name_value"
+              id="name-input"
+              type="text" 
+              value=""
+              name="fullName"
+              placeholder="Ведите Ваше имя"
+              minlength="2"
+              maxlength="40">
+            <div class="popup__input-error-container">
+              <span class="popup__input-error name-input-error"></span>
+            </div>
+            </label>
+            <label class="form__field">
+              <input
+              required
+              class="popup__input popup__input_job_value"
+              id="job-input"
+              type="text"
+              value=""
+              name="profession"
+              placeholder="Вид Вашей деятельности"
+              minlength="2"
+              maxlength="200">
+            <div class="popup__input-error-container">
+              <span class="popup__input-error job-input-error"></span>
+            </div>
+            </label>
             <button class="popup__submit popup__submit_edit" type="submit">Сохранить</button>
         </form>
-        <button class="popup__buttom-close popup__buttom-close_edit" type="button"></button>
+        <button class="popup__buttom-close popup__buttom-close_edit popup__button_disabled" type="button"></button>
     </div>
 </section>
 
 <section class="popup popup_add">
   <div class="popup__container">
       <h2 class="popup__title">Новое место</h2>
-      <form class="popup__form  popup__form_add" name="form">
-          <input class="popup__input popup__input_title_value" type="text" value="" name="title" placeholder="Название">
-          <input class="popup__input popup__input_link_value" type="text" value="" name="link" placeholder="Ссылка на картинку">
+      <form class="popup__form  popup__form_add" name="form" novalidate>
+          <label class="form__field"> 
+            <input
+            required
+            class="popup__input  popup__input_title_value"
+            id="title-input"
+            type="text" 
+            value="" 
+            name="title"
+            placeholder="Название">
+            <div class="popup__input-error-container">
+            <span class="popup__input-error title-input-error"></span>
+          </div>
+          </label>
+            <input
+            required
+            class="popup__input popup__input_link_value"
+            id="url-input"
+            type="url"
+            value=""
+            name="link"
+            placeholder="Ссылка на картинку"
+            minlength="2"
+            maxlength="200">
+            <div class="popup__input-error-container">
+            <span class="popup__input-error url-input-error"></span>
+          </div>
+          </label>
           <button class="popup__submit popup__submit_add" type="submit">Сохранить</button>
       </form>
       <button class="popup__buttom-close popup__buttom-close_add" type="button"></button>
@@ -74,5 +127,6 @@
   </article>
 </template>
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/validate.js" defer></script>
 </body>
 </html>  

@@ -103,6 +103,13 @@ function submitAddProfileForm (evt) {
 
 function openPopup(popup){
     popup.classList.add("popup_opened")
+    document.addEventListener('keydown', (evt) => {
+        keyHandlerEsc(evt, popup)
+    })
+    document.addEventListener( 'click', (evt) => {
+        keyHandlerOverlay (evt, popup)
+    })
+
 };
 
 function closePopup(popup) {                                                      //удаление класса для popup
@@ -131,3 +138,13 @@ popupBtnCloseAdd.addEventListener("click", ()=> {
 popupFotoBtnClose.addEventListener("click", ()=> {
     closePopup(popupFoto)
 });
+
+function keyHandlerEsc(evt, popup) {
+    if(evt.key === 'Escape') {
+        closePopup(popup)
+    }
+  }
+  function keyHandlerOverlay (evt, popup){
+  if (evt.target == popup) {
+      closePopup(popup)
+  }}
