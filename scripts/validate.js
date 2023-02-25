@@ -52,7 +52,7 @@ const hasInvalidInput = (inputList) => {
     }
   };
 
-  const toggleButtonStateStart = (buttonElement) => {
+  const toggleButtonStateStart = (buttonElement, inputElement) => {
     buttonElement.classList.add(formsConfig.inactiveButtonClass);
     buttonElement.setAttribute('disabled', 'disabled');
   }

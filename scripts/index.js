@@ -137,8 +137,9 @@ const keyHandlerEsc = (evt) => {
     };
 }
 const keyHandlerOverlay = (evt) => {
-    console.log(evt)
-  if (evt.target !== evt.currentTarget) {
+    console.log(evt.Target)
+    console.log(evt.currentTarget)
+    if (evt.target.classList.contains('popup')) {
         const popup = document.querySelector('.popup_opened');
         document.removeEventListener('mousedown', keyHandlerOverlay);
         document.removeEventListener('keydown', keyHandlerEsc)
