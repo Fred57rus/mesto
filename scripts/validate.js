@@ -52,6 +52,11 @@ const hasInvalidInput = (inputList) => {
     }
   };
 
+  const toggleButtonStateStart = (buttonElement) => {
+    buttonElement.classList.add(formsConfig.inactiveButtonClass);
+    buttonElement.setAttribute('disabled', 'disabled');
+  }
+console.log(toggleButtonStateStart)
 const setEventListeners = (formElement) => {
     const inputList = Array.from(formElement.querySelectorAll(formsConfig.inputElement));
     const buttonElement = formElement.querySelector(formsConfig.submitButtonSelector);
