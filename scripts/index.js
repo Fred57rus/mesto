@@ -106,7 +106,9 @@ function openPopup(popup){
     document.addEventListener('mousedown', keyHandlerOverlay);
 }
 
-function closePopup(popup) {                                                      //удаление класса для popup
+function closePopup(popup) {      
+    document.removeEventListener('mousedown', keyHandlerOverlay);
+    document.removeEventListener('keydown', keyHandlerEsc)                                                //удаление класса для popup
     popup.classList.remove("popup_opened");
 };
 
@@ -130,19 +132,13 @@ function openPopupEdit() {
 const keyHandlerEsc = (evt) => {
     if(evt.key === 'Escape') {
         const popup = document.querySelector('.popup_opened');
-        document.removeEventListener('mousedown', keyHandlerOverlay);
-        document.removeEventListener('keydown', keyHandlerEsc)
         closePopup(popup);
 
     };
 }
 const keyHandlerOverlay = (evt) => {
-    console.log(evt.Target)
-    console.log(evt.currentTarget)
     if (evt.target.classList.contains('popup')) {
         const popup = document.querySelector('.popup_opened');
-        document.removeEventListener('mousedown', keyHandlerOverlay);
-        document.removeEventListener('keydown', keyHandlerEsc)
         closePopup(popup);
   }
 }
