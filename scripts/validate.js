@@ -1,6 +1,6 @@
-// const form = document.querySelector('.popup__form');
-// const formInput = form.querySelector('.popup__input');
-// const formError = form.querySelector(`.${formInput.id}-error`);
+const form = document.querySelector('.popup__form');
+const formInput = form.querySelector('.popup__input');
+const formError = form.querySelector(`.${formInput.id}-error`);
 
 const formsConfig = {
     formElement: '.popup__form',
@@ -129,9 +129,9 @@ enableValidation(formsConfig);
 
 
 
-// // const form = document.querySelector('.popup__form');
-// // const formInput = form.querySelector('.popup__input');
-// // const formError = form.querySelector(`.${formInput.id}-error`);
+// const form = document.querySelector('.popup__form');
+// const formInput = form.querySelector('.popup__input');
+// const formError = form.querySelector(`.${formInput.id}-error`);
 
 // const formsConfig = {
 //     formElement: '.popup__form',
