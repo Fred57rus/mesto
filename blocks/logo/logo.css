@@ -10,19 +10,6 @@
 
 @media (max-width: 930px) {
   .header{
-    max-width: 590px;
-  }
-}
-
-@media (max-width: 320px) {
-  .logo{
-		max-width: 266px;
-
-    margin: 19px 0 0 26px;
-
-		width: 103px;
-    height: 24px;
-		
-		background-size: cover;
+    width: 100vh;
   }
 }
