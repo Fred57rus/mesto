@@ -84,8 +84,6 @@
     font-size: 24px;
     line-height: 29px;
   
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-wrap: normal;
     text-align: center;
     }
