@@ -148,7 +148,7 @@ export const initialCards = [
         link: 'images/foto/37.jpeg'
     },
     {
-        name: 'Перогов',
+        name: 'Пирогов',
         link: 'images/foto/38.jpeg'
     },
     {
@@ -162,5 +162,5 @@ export const initialCards = [
     {
         name: 'Красивый кадр',
         link: 'images/foto/41.jpeg'
-    }
+    },
     ];
